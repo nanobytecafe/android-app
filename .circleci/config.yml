@@ -1,0 +1,16 @@
+version: 2.1
+
+workflows:
+  main:
+    jobs:
+      - build
+
+jobs:
+  build:
+    machine:
+      image: android:202102-01
+    resource_class: large
+    steps:
+      - checkout
+      - run:
+          command: ./gradlew build
