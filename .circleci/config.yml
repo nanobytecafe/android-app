@@ -8,7 +8,7 @@ workflows:
 jobs:
   build:
     machine:
-      image: android:202102-01
+      image: android:2022.12.1
     steps:
       - checkout
       - run:
