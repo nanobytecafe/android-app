@@ -8,7 +8,7 @@ import android.webkit.WebViewClient
 
 class MainActivity : AppCompatActivity() {
 
-    lateinit var myWebView: WebView
+    private lateinit var myWebView: WebView
 
     override fun onCreate(savedInstanceState: Bundle?) {
 
